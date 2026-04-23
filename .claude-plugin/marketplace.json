@@ -1,0 +1,20 @@
+{
+  "name": "pwsh-native-marketplace",
+  "owner": {
+    "name": "yohan",
+    "email": "yohanpierre15@gmail.com"
+  },
+  "metadata": {
+    "description": "Windows-native PowerShell-first Claude Code extensions",
+    "version": "0.5.0"
+  },
+  "plugins": [
+    {
+      "name": "pwsh-native",
+      "source": "./",
+      "description": "Windows-native PowerShell stack for Claude Code in max-autonomy mode. Ships pwsh-admin as main-thread agent (silent installs via winget / PSResource / cargo / npm / pip / pipx / code / claude plugin, UAC elevation via Start-Process -Verb RunAs, no confirmation prompts), plus pwsh-expert, win32-expert, bun-expert, and pwsh-main specialists. Preloads PowerShell and Microsoft docs skills. Slash commands for admin workflows (install, elevate, winget upgrade, services, CIM, event log, registry). Zero interception — nothing is blocked or warned.",
+      "category": "development",
+      "homepage": "https://github.com/aphrody-code/pwsh-native-plugin"
+    }
+  ]
+}

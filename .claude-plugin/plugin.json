@@ -1,0 +1,33 @@
+{
+  "name": "pwsh-native",
+  "version": "0.5.0",
+  "description": "Windows-native PowerShell-first stack for Claude Code in MAX AUTONOMY mode. Ships pwsh-admin as the main-thread agent (assumes UAC acceptance, installs freely via winget / Install-PSResource / cargo / bun / uv / pipx / code / claude plugin), plus pwsh-expert, win32-expert, and bun-expert specialists. Auto-wires the Microsoft Learn MCP server. Slash commands for admin workflows (install, elevate, winget upgrade, services, CIM, event log, registry). No interception hook — zero friction by design.",
+  "author": {
+    "name": "yohan",
+    "email": "yohanpierre15@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/aphrody-code/pwsh-native-plugin",
+  "repository": "https://github.com/aphrody-code/pwsh-native-plugin",
+  "keywords": [
+    "windows",
+    "powershell",
+    "pwsh",
+    "win32",
+    "winget",
+    "admin",
+    "uac",
+    "autonomy",
+    "cli",
+    "mcp",
+    "microsoft-docs"
+  ],
+  "userConfig": {
+    "ms_repos_path": {
+      "type": "directory",
+      "title": "Microsoft reference repos path",
+      "description": "Absolute path to your local clones of Microsoft reference repos (Windows-classic-samples, windows-rs, CsWin32, PowerShell-Docs, etc.). Leave blank if you don't have them. Example: C:/Users/you/ms-repos",
+      "sensitive": false
+    }
+  }
+}
