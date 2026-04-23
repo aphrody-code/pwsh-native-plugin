@@ -10,7 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `.mcp.json` auto-wires the **Microsoft Learn MCP server** (`https://learn.microsoft.com/api/mcp`) when the plugin is enabled. Agents now reach the canonical docs via MCP tools (`microsoft_docs_search`, `microsoft_code_sample_search`, `microsoft_docs_fetch`) instead of WebFetch.
 - Native Claude Code command frontmatter on all 8 slash commands: `argument-hint` (CLI usage display) and `allowed-tools` (per-command tool scoping).
-- `plugin.json` now declares explicit `commands`, `agents`, `skills`, and `mcpServers` paths for manifest clarity.
 
 ### Changed
 - Bumped plugin version to `0.5.0`.
@@ -35,6 +34,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - `userConfig.ms_repos_path` manifest validation — added required `type: "directory"` and `title` fields.
-
-[0.5.0]: https://github.com/aphrody-code/pwsh-native-plugin/releases/tag/v0.5.0
-[0.4.0]: https://github.com/aphrody-code/pwsh-native-plugin/releases/tag/v0.4.0

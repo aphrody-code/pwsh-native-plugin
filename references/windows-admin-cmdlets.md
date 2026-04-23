@@ -192,7 +192,7 @@ Get-VMNetworkAdapter vm01 | Set-VMNetworkAdapterVlan -Access -VlanId 100
 ```powershell
 Get-MpComputerStatus              # RealTimeProtection, signatures, quick scan time
 Get-MpPreference                  # current config
-Add-MpPreference -ExclusionPath 'C:\Users\yohan\dscode','C:\Users\yohan\ms-repos'
+Add-MpPreference -ExclusionPath 'C:\path\to\folder1','C:\path\to\folder2'
 Set-MpPreference -DisableRealtimeMonitoring $true    # (requires admin + often Tamper Protection off)
 Start-MpScan -ScanType QuickScan
 Get-MpThreatDetection             # recent detections
